@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.stop {
+  height: 100vh;
+  overflow: hidden;
+  backdrop-filter: blur(0);
+  transition: backdrop-filter 0.3s ease;
+}
+
+ion-icon {
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* for mini-header  */
+
+.mini_header {
+  background-color: #013d28;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.ph_no {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav {
+  background-color: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 12rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo a {
+  color: #000;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login_form {
+  width: 500px;
+  background-color: white;
+  position: absolute;
+  display: none;
+  padding: 45px;
+  border-radius: 20px;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: backdrop-filter 0.3s ease;
+}
+
+.login_form span {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.login_form.active {
+  display: block;
+}
+
+.login_form form {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nameing {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.nameing input {
+  width: 100%;
+  border: 1px solid rgb(188, 186, 186);
+  padding: 10px;
+  color: #333;
+  border-radius: 10px;
+}
+
+.nameing input.error {
+  border: 1px solid rgb(248 113 113);
+}
+
+.input-box input::placeholder {
+  color: rgb(162, 155, 155);
+}
+
+.email.error {
+  border: 1px solid rgb(248 113 113) !important;
+}
+
+.password_input input.error {
+  border: 1px solid rgb(248 113 113);
+}
+
+.input_container {
+  border: 1px solid #333;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 20px;
+}
+
+.nav_right input {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 18px;
+  width: 250px;
+}
+
+.password_input {
+  position: relative;
+}
+
+.toggle-button ,.toggle-button2 {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.has_account {
+  font-size: 13px;
+}
+
+.acc {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.clr-acc {
+  color: green;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.termS {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.termS p {
+  font-size: 12px;
+  color: grey;
+}
+
+span.color_cyan {
+  color: green;
+  font-size: 12px;
+}
+
+.input-box {
+  width: 100%;
+  border: 1px solid rgb(188, 186, 186);
+  padding: 10px;
+  color: #333;
+  border-radius: 10px;
+}
+
+.form_btn {
+  color: #fff;
+  background-color: #023d28;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.form_btn:hover {
+  background-color: #013d28b5;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+main {
+  height: 650px;
+  background-color: #add8e9;
+  padding: 0 12rem;
+  width: 100%;
+  display: flex;
+}
+
+main div {
+  width: 50%;
+}
+
+.hero_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.hero_left h1 {
+  font-size: 60px;
+  color: #013d28;
+  line-height: 80px;
+}
+
+.hero_left p {
+  width: 85%;
+  font-size: 20px;
+  color: #231f1e;
+}
+
+.hero_left button {
+  background-color: #013d28;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero_left button:hover {
+  background-color: #013d28b5;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.naming_error {
+  color: rgb(248 113 113);
+  margin: -8px 0px;
+  font-size: 10px !important;
+}
+
+.hero_right {
+}

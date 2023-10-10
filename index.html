@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce </title>
-</head>
-<body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thone Nya Store</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body id="body">
+    <div id="login" class="login_form">
+      <span>Register</span>
+
+      <form id="form_submit" onsubmit="RegiserSubmitHandler(event)" >
+
+        <div id="namingForm" class="nameing">
+          <input id="firstName" type="text" class="input-box" placeholder="First Name" />
+          <input id="secondName" type="text" class="input-box" placeholder="Second Name" />
+        </div>
+        <span id="nameError" class="naming_error"> </span>
+
+        <input id="email" class="email input-box" type="email" placeholder="Your Email" />
+        <span id="emailError" class="naming_error"></span>
+
+        <div class="password_input">
+          <input
+           id="password"
+            class="password input-box"
+            type="password"
+            placeholder="Password"
+          />
+          <div class="toggle-button" onclick="passwordToggle()">
+            <ion-icon class="eye_close" name="eye-outline"></ion-icon>
+        </div>
     
-</body>
+      
+        </div>
+
+        <div class="password_input">
+          <input
+            id="comfirm_password"
+            class="comfirm_password input-box"
+            type="password"
+            placeholder="Confirm Password"
+          />
+        
+        <div class="toggle-button2" onclick="passwordComfirmToggle()">
+          <ion-icon class="eye_close" name="eye-outline"></ion-icon>
+       </div>
+        </div>
+
+        <span id="pswError" class="naming_error"></span>
+
+
+        <div class="termS">
+          <input type="checkbox" />
+          <p>Yes, I want to receive notification and email</p>
+        </div>
+
+        <div class="termS">
+          <input type="checkbox" />
+          <p
+            >I agree to <span class="color_cyan">Term, Privacy Policy</span> and
+            <span class="color_cyan">Fees</span>
+          </p>
+        </div>
+
+        <button class="form_btn" type="submit">Create Account</button>
+
+        <div class="acc">
+          <p class="has_account">Already have an account?</p>
+          <p class="has_account clr-acc">Log in now!</p>
+        </div>
+       
+      </form>
+    </div>
+
+    <div class="mini_header">
+      <div class="ph_no">
+        <ion-icon name="call-outline"></ion-icon>
+        +959407788533
+      </div>
+      <div>
+        <span>Get 50% Off on Selected Items </span>
+        <span> | </span>
+        <span>Shop Now</span>
+      </div>
+      <div>
+        <select id="">
+          <option value="eng">English</option>
+          <option value="mm">Myanmar</option>
+        </select>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav">
+        <div class="logo">
+          <ion-icon size="large" name="balloon-outline"></ion-icon>
+          <a href="index.html"> Thone Nya </a>
+        </div>
+        <div>Category</div>
+        <div>Deals</div>
+        <div>What's New</div>
+        <div>Delivery</div>
+      </div>
+      <div class="nav_right">
+        <div class="input_container">
+          <input type="text" placeholder="Search Product" />
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <div id="account" class="account">
+          <img src="/assets/icons/account.png" alt="account" />
+          <span>Account</span>
+        </div>
+        <div class="cart">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span>Cart</span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="hero_left">
+        <h1>Shopping And Department Store.</h1>
+        <p>
+          Shopping is a bit of a relaxing hobby for me, which is sometimes
+          troubling for the bank balance.
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="hero_right"></div>
+    </main>
+
+    <script src="/js/main.js"></script>
+  </body>
 </html>
