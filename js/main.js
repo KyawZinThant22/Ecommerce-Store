@@ -1,6 +1,9 @@
 const account = document.getElementById("account");
 const login = document.getElementById("login");
 const body = document.getElementById("body");
+
+
+//Register Form 
 const formHandler = document.getElementById("form_submit");
 const firstName = document.getElementById("firstName");
 const secondName = document.getElementById("secondName");
@@ -15,6 +18,26 @@ const passwrodError = document.getElementById("pswError");
 const passwordErr = document.querySelectorAll(".password_input input");
 const toggleButton = document.querySelector(".toggle-button");
 const toggleButton2 = document.querySelector(".toggle-button2");
+
+//Login Form
+
+const loginFormHandler = document.getElementById("Login_form_submit");
+const loginForm = document.querySelector(".login_form")
+const Lemail = document.getElementById("Lemail");
+const Lpassword = document.getElementById("Lpassword");
+
+const LemailError = document.getElementById("LemailError");
+const LpasswordError = document.getElementById("LpswError");
+
+const LemailErr = document.querySelector(".Lemail")
+const LPasswordErr = document.querySelector(".Lpassword")
+
+
+//toggle login signup form
+const loginPage = document.getElementById("login_page")
+const registerPage = document.getElementById("registerPage")
+
+
 
 
 account.addEventListener("click", () => {
@@ -89,3 +112,42 @@ const passwordComfirmToggle = () => {
 
 
 
+const LoginHandler = (event) => {
+  event.preventDefault();
+
+    if(Lemail.value == ''){
+      LemailError.innerText = "Enter email"
+      LemailErr.classList.add('error')
+    }else {
+      LemailError.innerText = ""
+      LemailErr.classList.remove('error')
+    }
+
+    if (LPasswordErr.value == ''){
+      LpasswordError.innerText = "Enter password";
+      LPasswordErr.classList.add("error")
+    }else if ( LPasswordErr.value.length <= 6) {
+      LpasswordError.innerText = "Password must be above 6 character";
+      LPasswordErr.classList.remove("error")
+    }
+}
+
+loginPage.addEventListener("click", () => {
+  login.classList.remove("active");
+  body.classList.remove("stop");
+
+  loginForm.classList.add("active")
+  body.classList.add("stop");
+
+})
+
+
+
+registerPage.addEventListener("click", () => {
+  loginForm.classList.remove("active");
+  body.classList.remove("stop");
+
+  login.classList.add("active")
+  body.classList.add("stop");
+
+})

@@ -14,6 +14,10 @@
   transition: backdrop-filter 0.3s ease;
 }
 
+body{
+  overflow: hidden;
+}
+
 ion-icon {
   font-size: 22px;
 }
@@ -80,6 +84,20 @@ nav {
   gap: 15px;
 }
 
+.register_form {
+  width: 500px;
+  background-color: white;
+  position: absolute;
+  display: none;
+  padding: 45px;
+  border-radius: 20px;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: backdrop-filter 0.3s ease;
+}
+
 .login_form {
   width: 500px;
   background-color: white;
@@ -94,13 +112,42 @@ nav {
   transition: backdrop-filter 0.3s ease;
 }
 
-.login_form span {
+.login_form.active{
+  display: block;
+}
+
+.register_form  span {
   font-size: 25px;
   font-weight: 500;
 }
 
-.login_form.active {
+.login_form span{
+  font-size: 25px;
+  font-weight: 500; 
+}
+
+.register_form .active{
   display: block;
+}
+
+.register_form  form {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register_form.active {
+  display: block;
+}
+
+.register_form form {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .login_form form {
@@ -108,7 +155,7 @@ nav {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .nameing {
@@ -136,6 +183,15 @@ nav {
 .email.error {
   border: 1px solid rgb(248 113 113) !important;
 }
+.Lemail.error {
+  border: 1px solid rgb(248 113 113) !important;
+}
+
+.Lpassword.error {
+  border: 1px solid rgb(248 113 113) !important;
+}
+
+
 
 .password_input input.error {
   border: 1px solid rgb(248 113 113);
@@ -290,7 +346,4 @@ main div {
   color: rgb(248 113 113);
   margin: -8px 0px;
   font-size: 10px !important;
-}
-
-.hero_right {
 }
