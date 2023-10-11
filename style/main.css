@@ -14,9 +14,7 @@
   transition: backdrop-filter 0.3s ease;
 }
 
-body{
-  overflow: hidden;
-}
+
 
 ion-icon {
   font-size: 22px;
@@ -56,6 +54,8 @@ nav {
   align-items: center;
   width: 100%;
   padding: 0 12rem;
+  position: sticky;
+  top: 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
