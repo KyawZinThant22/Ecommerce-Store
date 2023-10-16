@@ -16,32 +16,45 @@
   </head>
 
   <body id="body">
+    <!-- register form -->
     <div id="login" class="register_form">
       <span>Register</span>
 
-      <form id="form_submit" onsubmit="RegiserSubmitHandler(event)" >
-
+      <form id="form_submit" onsubmit="RegiserSubmitHandler(event)">
         <div id="namingForm" class="nameing">
-          <input id="firstName" type="text" class="input-box" placeholder="First Name" />
-          <input id="secondName" type="text" class="input-box" placeholder="Second Name" />
+          <input
+            id="firstName"
+            type="text"
+            class="input-box"
+            placeholder="First Name"
+          />
+          <input
+            id="secondName"
+            type="text"
+            class="input-box"
+            placeholder="Second Name"
+          />
         </div>
         <span id="nameError" class="naming_error"> </span>
 
-        <input id="email" class="email input-box" type="email" placeholder="Your Email" />
+        <input
+          id="email"
+          class="email input-box"
+          type="email"
+          placeholder="Your Email"
+        />
         <span id="emailError" class="naming_error"></span>
 
         <div class="password_input">
           <input
-           id="password"
+            id="password"
             class="password input-box"
             type="password"
             placeholder="Password"
           />
           <div class="toggle-button" onclick="passwordToggle()">
             <ion-icon class="eye_close" name="eye-outline"></ion-icon>
-        </div>
-    
-      
+          </div>
         </div>
 
         <div class="password_input">
@@ -51,14 +64,13 @@
             type="password"
             placeholder="Confirm Password"
           />
-        
-        <div class="toggle-button2" onclick="passwordComfirmToggle()">
-          <ion-icon class="eye_close" name="eye-outline"></ion-icon>
-       </div>
+
+          <div class="toggle-button2" onclick="passwordComfirmToggle()">
+            <ion-icon class="eye_close" name="eye-outline"></ion-icon>
+          </div>
         </div>
 
         <span id="pswError" class="naming_error"></span>
-
 
         <div class="termS">
           <input type="checkbox" />
@@ -67,8 +79,8 @@
 
         <div class="termS">
           <input type="checkbox" />
-          <p
-            >I agree to <span class="color_cyan">Term, Privacy Policy</span> and
+          <p>
+            I agree to <span class="color_cyan">Term, Privacy Policy</span> and
             <span class="color_cyan">Fees</span>
           </p>
         </div>
@@ -79,10 +91,10 @@
           <p class="has_account">Already have an account?</p>
           <p id="login_page" class="has_account clr-acc">Log in now!</p>
         </div>
-       
       </form>
     </div>
 
+    <!-- login form -->
     <div id="login_form" class="login_form">
       <span>Login</span>
 
@@ -113,7 +125,7 @@
 
         <div class="acc">
           <p class="has_account">Don't have a account ?</p>
-          <p id="registerPage" class="has_account clr-acc">Sign Up here </p>
+          <p id="registerPage" class="has_account clr-acc">Sign Up here</p>
         </div>
       </form>
     </div>
@@ -136,7 +148,7 @@
       </div>
     </div>
 
-    <nav>
+    <nav id="main_page_header">
       <div class="nav">
         <div class="logo">
           <ion-icon size="large" name="balloon-outline"></ion-icon>
@@ -152,7 +164,7 @@
           <input type="text" placeholder="Search Product" />
           <ion-icon name="search-outline"></ion-icon>
         </div>
-
+  
         <div id="account" class="account">
           <img src="/assets/icons/account.png" alt="account" />
           <span>Account</span>
@@ -176,7 +188,432 @@
       <div class="hero_right"></div>
     </main>
 
+    <section id="category" class="category">
+      <h1 class="topic">Shop Our Top Categories</h1>
+
+      <div class="category_container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <section id="deal" class="deal">
+      <h1 class="topic">Todays Best Deals For You!</h1>
+
+      <div class="deal_container">
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+            <span>240K MMK</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+            <span>240K MMK</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+            <span>240K MMK</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="brand" class="brandContainer">
+
+      <h class="topic">Choose By Brand</h>
+
+      <div class="brand_container">
+        <div class="brand_sub">
+
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="brand_sub">
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+          <div class="brand_card">
+            <div class="img"></div>
+            <div>
+              <p class="brand_name">Apple</p>
+              <p class="brand_deliver">Deliver within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="product" class="">
+      <h1 class="topic">Today best deal for you</h1>
+
+      <div class="category_list">
+        <div>Gadget</div>
+        <div>Fashion</div>
+        <div>Phone</div>
+        <div>Education</div>
+        <div>Beauty</div>
+        <div>Laptop</div>
+        <div>Ring</div>
+      </div>
+
+      <div class="product_container">
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+
+      
+      </div>
+      <div class="product_container">
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+
+      
+      </div>
+      <div class="product_container">
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+        <div>
+          <div class="card"></div>
+          <div class="pricing">
+            <span>HomePod Mini</span>
+          </div>
+          <p class="card_content">
+            Table with air purifier, stained venner/black
+          </p>
+          <div class="rating">
+            <div>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+              <img src="./assets/icons/star.svg" alt="star" />
+            </div>
+            <span>(121)</span>
+          </div>
+          <button class="card_btn">Add to cart</button>
+        </div>
+
+      
+      </div>
+      </div>
+    </section>
 
     <script src="/js/main.js"></script>
+    <!-- <script src="/js/Header.js" ></script> -->
   </body>
 </html>

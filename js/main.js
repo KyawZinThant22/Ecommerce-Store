@@ -18,6 +18,9 @@ const passwrodError = document.getElementById("pswError");
 const passwordErr = document.querySelectorAll(".password_input input");
 const toggleButton = document.querySelector(".toggle-button");
 const toggleButton2 = document.querySelector(".toggle-button2");
+const mainPageHeader = document.getElementById("main_page_header")
+
+console.log(mainPageHeader)
 
 //Login Form
 
@@ -151,3 +154,40 @@ registerPage.addEventListener("click", () => {
   body.classList.add("stop");
 
 })
+
+
+function generateNavBar() {
+  var header = `
+    <div class="nav">
+      <div class="logo">
+        <ion-icon size="large" name="balloon-outline"></ion-icon>
+        <a href="index.html"> Thone Nya </a>
+      </div>
+      <div>Category</div>
+      <div>Deals</div>
+      <div>What's New</div>
+      <div>Delivery</div>
+    </div>
+    <div class="nav_right">
+      <div class="input_container">
+        <input type="text" placeholder="Search Product" />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+
+      <div id="account" class="account">
+        <img src="/assets/icons/account.png" alt="account" />
+        <span>Account</span>
+      </div>
+      <div class="cart">
+        <ion-icon name="cart-outline"></ion-icon>
+        <span>Cart</span>
+      </div>
+    </div>
+  `;
+
+  var mainPageHeader = document.getElementById("main_page_header");
+  mainPageHeader.innerHTML = header;
+}
+
+
+
