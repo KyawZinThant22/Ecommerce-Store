@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </head>
+
+  <body>
+    <nav id="main_page_header"></nav>
+
+
+    <div class="login_container">
+        <div id="login_form" class="login_form">
+            <span>Login</span>
+      
+            <form id="Login_form_submit" onsubmit="LoginHandler(event)">
+              <input
+                id="Lemail"
+                class="Lemail input-box"
+                type="email"
+                placeholder="Your Email"
+              />
+              <span id="LemailError" class="naming_error"></span>
+      
+              <div class="password_input">
+                <input
+                  id="Lpassword"
+                  class="Lpassword input-box"
+                  type="password"
+                  placeholder="Password"
+                />
+                <div class="toggle-button" onclick="LpasswordToggle()">
+                  <ion-icon class="eye_close" name="eye-outline"></ion-icon>
+                </div>
+              </div>
+      
+              <span id="LpswError" class="naming_error"></span>
+      
+              <button class="form_btn" type="submit">Login</button>
+      
+              <div class="acc">
+                <p class="has_account">Don't have a account ?</p>
+                <p id="registerPage" class="has_account clr-acc">Sign Up here</p>
+              </div>
+            </form>
+          </div>
+    </div>
+   
+
+
+    <!-- <hr class="divider"> -->
+
+    <div id="footer" class="login_footer">
+
+    <script src="/js/main.js"></script>
+    <script src="./js/Header.js"></script>
+    <script src="./js/Footer.js"></script>
+  </body>
+</html>

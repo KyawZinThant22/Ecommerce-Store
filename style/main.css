@@ -108,13 +108,10 @@ nav {
 .login_form {
   width: 500px;
   background-color: white;
-  position: absolute;
-  display: none;
   padding: 45px;
   border-radius: 20px;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+ 
+
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: backdrop-filter 0.3s ease;
 }
@@ -163,6 +160,13 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.login_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .nameing {
@@ -542,8 +546,9 @@ section {
 .product_container .card{
   width: 320px;
   height: 300px;
-  background-color: antiquewhite;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .service_container{
@@ -645,3 +650,5 @@ footer div ul li{
   display: flex;
   gap: 10px;
 }
+
+
