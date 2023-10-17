@@ -31,6 +31,10 @@ input:focus {
   outline: none;
 }
 
+ul{
+  list-style: none;
+}
+
 /* for mini-header  */
 
 .mini_header {
@@ -378,8 +382,23 @@ section {
 .category_container div {
   width: 200px;
   height: 250px;
-  background-color: burlywood;
   border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category_container div img {
+  width: 200px;
+  height: 250px;
+}
+
+.category_container div p {
+ position: absolute;
+ color: #fff;
+ font-size: 20px;
+ top: 12px;
+ left: 58px;
+ font-weight: bold;
 }
 
 .deal_container {
@@ -392,8 +411,11 @@ section {
 .card {
   width: 420px;
   height: 330px;
-  background-color: antiquewhite;
+  background-color: #F5F6F6;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -477,9 +499,14 @@ section {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: red;
+
 }
 
+.brand_card .img img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
 .brand_name{
   font-size: 17px;
   font-weight: bold;
@@ -563,4 +590,58 @@ section {
   overflow: hidden;
   height: 100%;
 
+}
+
+.divider{
+  margin: 50px 12rem;
+  height: 3px;
+  background-color: gray;
+}
+
+footer{
+  margin-top: 20px;
+  padding: 12px 12rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.store-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+
+.store-footer p{
+  font-size: 14px;
+}
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer div ul{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer div ul li{
+  font-size: 14px;
+}
+
+.second_footer{
+  padding: 0px 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.second_footer div{
+  display: flex;
+  gap: 10px;
 }
