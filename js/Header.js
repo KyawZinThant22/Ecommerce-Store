@@ -3,7 +3,7 @@ function generateHeader() {
       <div class="nav">
         <div class="logo">
           <ion-icon size="large" name="balloon-outline"></ion-icon>
-          <a href="index.html"> Thone Nya </a>
+          <a href="/index.html"> Thone Nya </a>
         </div>
         <div>Category</div>
         <div>Deals</div>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/productDetail.css" />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  </head>
+  <body>
+    <nav id="main_page_header"></nav>
+
+    <div class="product_detail_container">
+      <div class="left">
+        <div class="left_product">
+          <img src="../assets/image/product1.png" alt="product" width=500px"
+          height="500px">
+        </div>
+
+        <div class="right_product">
+          <div>
+            <img
+              src="../assets/image/product1.png"
+              alt=""
+              width="130"
+              height="130"
+            />
+          </div>
+          <div>
+            <img
+              src="../assets/image/product1.png"
+              alt=""
+              width="130"
+              height="130"
+            />
+          </div>
+          <div>
+            <img
+              src="../assets/image/product1.png"
+              alt=""
+              width="130"
+              height="130"
+            />
+          </div>
+          <div>
+            <img
+              src="../assets/image/product1.png"
+              alt=""
+              width="130"
+              height="130"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h1>Laptop Sleeve Macbook</h1>
+        <p>
+         Organic Cotton,Fairtrade certified
+        </p>
+        <div class="rating">
+          <div>
+            <img src="../assets/icons/star.svg" alt="star" />
+            <img src="../assets/icons/star.svg" alt="star" />
+            <img src="../assets/icons/star.svg" alt="star" />
+            <img src="../assets/icons/star.svg" alt="star" />
+            <img src="../assets/icons/star.svg" alt="star" />
+          </div>
+          <span>(121)</span>
+        </div>
+
+        <hr class="product_divider" />
+
+        <div class="payment_container">
+          <span>$549.00 or 99.99/month</span>
+          <p>Suggested payment with 6 months special Financing</p>
+        </div>
+
+        <hr class="product_divider" />
+
+        <div class="color_container">
+          <h2>Choose a color</h2>
+
+          <div class="color_pick">
+            <div class="blue"></div>
+
+            <div class="red"></div>
+            <div class="orange"></div>
+            <div class="cyan"></div>
+            <div class="brown"></div>
+          </div>
+        </div>
+
+        <hr class="product_divider" />
+
+        <div>
+          <div class="quantity_container">
+            <div class="quantity">
+              <button onclick="decrement()"  >-</button>
+              <input id="quantityValue" value="1" min="1" max="10" type="text" />
+              <button onclick="increment()" >+</button>
+            </div>
+            <div class="r">
+              <p>Only <span>12 items</span> left!</p>
+              <p>Don't miss it</p>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button class="buy">Buy Now</button>
+            <button class="cartt">Add to Cart</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="login_footer"></div>
+
+    <script src="/js/ProductDetail.js"></script>
+    <script src="/js/Footer.js"></script>
+    <script src="/js/Header.js"></script>
+  </body>
+</html>

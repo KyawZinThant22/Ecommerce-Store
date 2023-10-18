@@ -1,0 +1,199 @@
+.product_detail_container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 4rem 10rem;
+}
+
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right {
+    width: 50%;
+}
+
+.left_product{
+    width: 92%;
+    height: 600px;
+    background-color:#F5F6F6;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_product{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right_product div{
+    width: 145px;
+    height: 150px;
+    background-color:#F5F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.right h1{
+    font-size: 30px;
+}
+
+.right p {
+    font-size: 16px;
+    width: 60%;
+}
+
+.product_divider{
+    width: 70%;
+    margin: 30px 0px;
+    height: 2px;
+    background: #d3d8d8;
+    border: none;
+}
+
+.payment_container span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.payment_container p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.color_container h2{
+    font-weight: 500;
+}
+
+.color_pick{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 20px;
+}
+
+
+.blue{
+    background: blue;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+
+.cyan {
+    background-color: cyan;
+}
+.brown{
+    background-color: brown;
+}
+
+.color_pick div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.quantity_container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.quantity{
+    background-color: #F5F6F6;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.quantity input{
+    width: 10px;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity button{
+    border: none;
+    background-color: #F5F6F6;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.quantity button:hover{
+    justify-self: self-start;
+    background-color: #899999;
+    
+}
+
+.r{
+    width: 100%;
+}
+
+.r p{
+    font-size: 14px;
+}
+
+.r p span{
+    color: orangered;
+}
+
+.btn{
+    margin-top: 25px;
+    display: flex;
+    width: 70%;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.btn button{
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+  
+    cursor: pointer;
+}
+
+
+.buy{
+    border: none;
+    background-color: #003D29;
+    color:#fff;
+}
+
+.cartt{
+    border: 2px solid #003D29;
+    color: #003D29;
+}
+
+.buy:hover{
+    background-color: #013d28b5;
+}
+
+.cartt:hover{
+    background-color: #003D29;
+    color: #fff;
+}
