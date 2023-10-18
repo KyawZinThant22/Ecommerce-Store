@@ -37,16 +37,10 @@ const loginPage = document.getElementById("login_page");
 const registerPage = document.getElementById("registerPage");
 
 account.addEventListener("click", () => {
-  if (login.classList.contains("active")) {
-    login.classList.remove("active");
-    body.classList.remove("stop");
-  } else {
-    login.classList.add("active");
-    body.classList.add("stop");
-  }
+  window.location.href="/Login.html"
 });
 
-const RegiserSubmitHandler = (event) => {
+function RegiserSubmitHandler(event){
   event.preventDefault();
 
   if (firstName.value == "" || secondName.value == "") {
@@ -84,9 +78,14 @@ const RegiserSubmitHandler = (event) => {
       input.classList.remove("error");
     });
   }
-};
 
-const passwordToggle = () => {
+  if ( firstName.value && secondName.value && email.value && password.value && passwordComfirm.value){
+    alert("Login Successful")
+    window.location.href = '/index.html'
+  }
+}
+
+function passwordToggle(){
   if (password.type === "password") {
     password.type = "text";
     toggleButton.innerHTML = `<ion-icon name="eye-off-outline"></ion-icon> `;
@@ -94,9 +93,9 @@ const passwordToggle = () => {
     password.type = "password";
     toggleButton.innerHTML = `<ion-icon class="eye_close" name="eye-outline"></ion-icon>`;
   }
-};
+}
 
-const passwordComfirmToggle = () => {
+function passwordComfirmToggle(){
   if (password.type === "password") {
     passwordComfirm.type = "text";
     toggleButton2.innerHTML = `<ion-icon name="eye-off-outline"></ion-icon> `;
@@ -104,7 +103,10 @@ const passwordComfirmToggle = () => {
     passwordComfirm.type = "password";
     toggleButton2.innerHTML = `<ion-icon class="eye_close" name="eye-outline"></ion-icon>`;
   }
-};
+}
+
+
+
 
 function LpasswordToggle() {
   if (LPasswordErr.type === "password") {
@@ -145,19 +147,24 @@ function LoginHandler(event) {
     window.history.back()
   }
 }
-console.log('login',isLogin)
-loginPage.addEventListener("click", () => {
-  login.classList.remove("active");
-  body.classList.remove("stop");
 
+loginPage.addEventListener("click", () => {
+  login.classList.add("active");
   loginForm.classList.add("active");
-  body.classList.add("stop");
 });
 
 registerPage.addEventListener("click", () => {
-  loginForm.classList.remove("active");
-  body.classList.remove("stop");
-
+  alert("hello")
+  loginForm.classList.add("active");
   login.classList.add("active");
-  body.classList.add("stop");
 });
+
+function LoginPage(){
+  login.classList.remove("active");
+  loginForm.classList.remove("active");
+}
+
+function RegisterPage(){
+  loginForm.classList.add("active");
+  login.classList.add("active");
+}

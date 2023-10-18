@@ -50,11 +50,92 @@
       
               <div class="acc">
                 <p class="has_account">Don't have a account ?</p>
-                <p id="registerPage" class="has_account clr-acc">Sign Up here</p>
+                <p id="registerPage" onclick="RegisterPage()" class="has_account clr-acc">Sign Up here</p>
               </div>
             </form>
           </div>
     </div>
+
+       <!-- register form -->
+       <div class="register_container">
+        <div id="login" class="register_form">
+          <span>Register</span>
+    
+          <form id="form_submit" onsubmit="RegiserSubmitHandler(event)">
+            <div id="namingForm" class="nameing">
+              <input
+                id="firstName"
+                type="text"
+                class="input-box"
+                placeholder="First Name"
+              />
+              <input
+                id="secondName"
+                type="text"
+                class="input-box"
+                placeholder="Second Name"
+              />
+            </div>
+            <span id="nameError" class="naming_error"> </span>
+    
+            <input
+              id="email"
+              class="email input-box"
+              type="email"
+              placeholder="Your Email"
+            />
+            <span id="emailError" class="naming_error"></span>
+    
+            <div class="password_input">
+              <input
+                id="password"
+                class="password input-box"
+                type="password"
+                placeholder="Password"
+              />
+              <div class="toggle-button" onclick="passwordToggle()">
+                <ion-icon class="eye_close" name="eye-outline"></ion-icon>
+              </div>
+            </div>
+    
+            <div class="password_input">
+              <input
+                id="comfirm_password"
+                class="comfirm_password input-box"
+                type="password"
+                placeholder="Confirm Password"
+              />
+    
+              <div class="toggle-button2" onclick="passwordComfirmToggle()">
+                <ion-icon class="eye_close" name="eye-outline"></ion-icon>
+              </div>
+            </div>
+    
+            <span id="pswError" class="naming_error"></span>
+    
+            <div class="termS">
+              <input type="checkbox" />
+              <p>Yes, I want to receive notification and email</p>
+            </div>
+    
+            <div class="termS">
+              <input type="checkbox" />
+              <p>
+                I agree to <span class="color_cyan">Term, Privacy Policy</span> and
+                <span class="color_cyan">Fees</span>
+              </p>
+            </div>
+    
+            <button class="form_btn" type="submit">Create Account</button>
+    
+            <div class="acc">
+              <p class="has_account">Already have an account?</p>
+              <p id="login_page" onclick="LoginPage()" class="has_account clr-acc">Log in now!</p>
+            </div>
+          </form>
+        </div>
+       </div>
+ 
    
 
 
