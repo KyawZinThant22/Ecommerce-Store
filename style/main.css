@@ -378,6 +378,12 @@ section {
   padding: 12px 12rem;
 }
 
+.hero_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 .category {
