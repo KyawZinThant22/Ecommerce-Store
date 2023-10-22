@@ -1,0 +1,286 @@
+.cart_container {
+  display: flex;
+  margin-top: 3rem;
+  padding: 0px 12rem;
+  gap: 25px;
+}
+
+.cart_card {
+  width: 65%;
+}
+
+.checkout {
+  width: 35%;
+  border: 2px solid #e5e4e6;
+  border-radius: 12px;
+  padding: 20px 30px;
+}
+
+.item_list {
+  border: 2px solid #e5e4e6;
+  padding: 20px 30px;
+  border-radius: 12px;
+}
+
+.item_list h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.items_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item_img {
+  background-color: #f5f6f6;
+  width: 200px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item_desc h3 {
+  font-size: 20px;
+}
+
+.item_desc p {
+  color: gray;
+}
+
+.delivery_container {
+  margin-top: 20px;
+  border: 2px solid #e5e4e6;
+  padding: 20px 30px;
+  border-radius: 12px;
+}
+
+.deli_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deli_title h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.deli_title button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(113, 110, 110);
+}
+
+.form_controller {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container_form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.input_controller {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input_controller label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text_field {
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: none;
+  border: 2px solid #e5e4e6;
+}
+
+.card_holder {
+  display: flex;
+  border: 2px solid #e5e4e6;
+  width: 100%;
+  padding: 18px 20px;
+  gap: 20px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.card_text_field {
+  border: none;
+  background: none;
+}
+
+.deli_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deli_btn button {
+  padding: 10px 20px;
+  display: flex;
+  background-color: #013d28;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.checkout h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.hr_cart {
+  margin: 20px 0px;
+  background: #e5e4e6;
+  height: 2px;
+  border: none;
+}
+
+.coupon_container {
+  width: 100%;
+  background-color: #f5f6f6;
+  padding: 5px 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coupon_container input {
+  border: none;
+  background: none;
+}
+
+.cart_container button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #013d28;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.payment_container h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.payment_hr {
+  height: 2px;
+  border: none;
+  background: #e5e4e6;
+  margin: 10px 0px;
+}
+
+.payment_option {
+  margin-top: 20px;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment_option div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payCard_container {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 20px;
+}
+
+.payCard_container div {
+  width: 80px;
+  height: 50px;
+  background-color: #f5f6f6;
+}
+
+.payment_info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Card {
+  width: 100%;
+}
+
+.total {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.total div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paybtn {
+  margin: 2rem 0px;
+  background-color: #013d28;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.paybtn:hover {
+  background-color: #013d28b5;
+}
