@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/Cart.css">
+  </head>
+  <body>
+
+    <nav id="main_page_header"></nav>
+
+    <div class="cart_container">
+        <div class="cart_card">
+            <div class="item_list">
+                <h2>Review Item and Shipping</h2>
+
+                <div class="items_list">
+                    <div class="items">
+                        <div class="left_side">
+                            <div class="item_img">
+                                <img width="160" height="160" src="./assets/image/product2.png" alt="product2">
+                            </div>
+                            <div class="item_desc">
+                                <h3>Airpods-Max</h3>
+                                <p>Color:pink</p>
+                            </div>  
+                        </div>
+
+                        <div class="right_side">
+                            <div class="item_desc">
+                                <h3>$549.00</h3>
+                                <p>Quantity: 01</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="items_list">
+                    <div class="items">
+                        <div class="left_side">
+                            <div class="item_img">
+                                <img width="160" height="160" src="./assets/image/product1.png" alt="product2">
+                            </div>
+                            <div class="item_desc">
+                                <h3>Laptop Sleeve</h3>
+                                <p>Color:yellow</p>
+                            </div>  
+                        </div>
+
+                        <div class="right_side">
+                            <div class="item_desc">
+                                <h3>$298.00</h3>
+                                <p>Quantity: 02</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery_container">
+                <div class="deli_title">
+                    <h2>Delivery Information</h2>
+                    <button>Save Information</button>
+                </div>
+
+                <form class="form_controller" action="">
+                    <div class="container_form">
+                        <div class="input_controller">
+                            <label for="firstName">First Name*</label>
+                            <input class="firstName text_field" name="firstName" type="text" placeholder="Type Here...">
+                        </div>
+                        <div class="input_controller">
+                            <label for="lastName">Last Name*</label>
+                            <input class="lastName text_field"  name="lastName" type="text" placeholder="Type Here...">
+                        </div>
+                    </div>
+
+                    <div class="input_controller">
+                        <label for="address">Address*</label>
+                        <input class="address text_field" name="address" type="text" placeholder="Type Here...">
+                    </div>
+
+                    <div class="container_form">
+                        <div class="input_controller">
+                            <label for="city">City/Town*</label>
+                            <input class="city text_field" name="city" type="text" placeholder="Type Here...">
+                        </div>
+                        <div class="input_controller">
+                            <label for="zip">Zip Code*</label>
+                            <input class="zip text_field"  name="zip" type="text" placeholder="Type Here...">
+                        </div>
+                    </div>
+
+                    <div class="container_form">
+                        <div class="input_controller">
+                            <label for="mobile">Mobile*</label>
+                            <input class="mobile text_field" name="mobile" type="text" placeholder="Type Here...">
+                        </div>
+                        <div class="input_controller">
+                            <label for="email">Email*</label>
+                            <input class="email text_field"  name="zip" type="text" placeholder="Type Here...">
+                        </div>
+                    </div>
+
+                    <div class="deli_btn">
+                        <button>Add</button>
+                    </div>
+                   
+                </form>
+            </div>
+          
+        </div>
+        <div class="checkout">
+            <h1>Order Summary</h1>
+            <hr class="hr_cart">
+
+            <div class="coupon_container">
+                <input type="text" placeholder="Enter Coupon Code">
+                <button>Apply coupon</button>
+            </div>
+
+            <hr class="hr_cart">
+
+            <div class="payment_container">
+                <h2>Payment Details</h2>
+                <hr class="payment_hr">
+
+                <div class="payment_option">
+                    <div>
+                        <input name="cash" type="radio"> Cash on Delivery
+                    </div>
+                    <div>
+                        <input name="cash" type="radio"> Shopcart Card
+                    </div>
+                    <div>
+                        <input name="cash" type="radio"> Paypal
+                    </div>
+                    <div>
+                        <input name="cash" type="radio"> Credit or Debit Card
+                    </div>
+                </div>
+
+                <div class="payCard_container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="payment_info">
+                    <div class="input_controller">
+                        <label for="Email">Email*</label>
+                        <input class="Email text_field" name="Email" type="text" placeholder="Type Here...">
+                    </div>
+
+                    <div class="input_controller">
+                        <label for="Card">Card Holder Name*</label>
+                        <input class="Card text_field" name="Card" type="text" placeholder="Type Here...">
+                    </div>
+
+                    <div class="input_controller">
+                        <label for="Card">Card Number*</label>
+                        <div class="card_holder">
+                            <img src="./assets/image/credit_card.png" width="20" alt="credit_card">
+                            <input class="Card card_text_field" name="Card" type="text" placeholder="0000*****12345">
+                        </div>
+                    </div>
+
+                    <div class="container_form">
+                        <div class="input_controller">
+                            <label for="firstName">Expiry*</label>
+                            <input class="firstName text_field" name="firstName" type="text" placeholder="Type Here...">
+                        </div>
+                        <div class="input_controller">
+                            <label for="lastName">CVC*</label>
+                            <input class="lastName text_field"  name="lastName" type="text" placeholder="Type Here...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div>
+                        <span style="font-weight:500" >Sub Total</span>
+                        <span>$847.00</span>
+                    </div>
+                    <div>
+                        <span style="font-weight:500" >Tax(10%)</span>
+                        <span>$84.70</span> 
+                    </div>
+                    <div>
+                        <span style="font-weight:500" >Coupon Discount</span>
+                        <span>-$84.70</span>
+                    </div>
+                    <div>
+                        <span style="font-weight:500" >Shopping Cost</span>
+                        <span>-$00.00</span>
+                    </div>
+                    <div></div>
+                </div>
+                <hr class="hr_cart">
+
+                <div class="sum">
+                    <span style="font-weight: 500;">Total</span>
+                    <span>=$847.00</span>
+                </div>
+
+                <div class="paybtn">Pay $847.00</div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="login_footer">
+
+    <script src="/js/Footer.js"></script>
+    <script src="/js/Header.js"></script>
+  </body>
+</html>

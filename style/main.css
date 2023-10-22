@@ -35,6 +35,15 @@ ul{
   list-style: none;
 }
 
+nav div{
+  cursor: pointer;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #333;
+}
+
 /* for mini-header  */
 
 .mini_header {
@@ -367,6 +376,12 @@ main div {
 
 section {
   padding: 12px 12rem;
+}
+
+.hero_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

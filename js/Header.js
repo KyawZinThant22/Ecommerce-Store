@@ -9,6 +9,7 @@ function generateHeader() {
         <div>Deals</div>
         <div>What's New</div>
         <div>Delivery</div>
+        <a href="aboutUs.html">About Us</a></div>
       </div>
       <div class="nav_right">
         <div class="input_container">
